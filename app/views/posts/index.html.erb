@@ -26,6 +26,8 @@
 
 <br>
 
+<%= link_to 'New Post', new_post_path %>
+
 
 <%= form_with model: @post do |form|  %>
     <%= form.label :username %>
@@ -34,6 +36,3 @@
     <%= form.text_field :content %>
     <%= form.submit 'Create', data: { confirm: "Do you want to create the post?" } %>
 <% end %>
-
-
-<%= link_to 'New Post', new_post_path %>
